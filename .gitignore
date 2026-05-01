@@ -1,0 +1,8 @@
+.env
+judge_simulator.py
+__pycache__/
+*.pyc
+.codex
+/tmp/
+.venv/
+venv/
