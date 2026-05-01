@@ -19,12 +19,12 @@ if os.path.exists(env_file):
 
 # Now import modules that depend on environment variables
 from flask import Flask, request, jsonify
-from context_store import ContextStore
-from category_store import CategoryStore
-from trigger_manager import TriggerManager
-from composer import Composer
-from conversation_handlers import respond as respond_to_reply
-from validator import Validator
+from stores.context_store import ContextStore
+from stores.category_store import CategoryStore
+from triggers.trigger_manager import TriggerManager
+from messaging.composer import Composer
+from messaging.conversation_handlers import respond as respond_to_reply
+from messaging.validator import Validator
 
 app = Flask(__name__)
 start_time = time.time()
